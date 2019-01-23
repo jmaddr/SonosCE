@@ -44,7 +44,7 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
   - Navigate to the IFTTT [web page](http://www.ifttt.com].
   - Add the Sonos service if you have not already done so.
   - Add the webhooks service if you have not already done so.
-  - Copy your personal identifying webhook hash to the clipboard.  This will be a multicharacter personal identifier.  you can find this identifier by navigating on the IFTTT website to "My Applets - Services - Webhooks - Settings" or directly by clicking [this link](https://ifttt.com/maker_webhooks).  The identifer is shown in the following image under the grey box. ![Image](image_webhook-sample-personal-information.png) 
+  - Copy your personal webhook identifier to the clipboard.  This will be a multicharacter personal identifier.  you can find this identifier by navigating on the IFTTT website to "My Applets - Services - Webhooks - Settings" or directly by clicking [this link](https://ifttt.com/maker_webhooks).  The identifer is shown in the following image under the grey box. ![Image](image_webhook-sample-personal-information.png) 
   - Create webhooks for the following actions, selecting the appropriate Sonos player (or group of players).
   	- Pause
 	- Resume
