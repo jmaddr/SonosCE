@@ -42,6 +42,8 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
 ## How to provision
 ### 1. Setup IFTTT webhooks service
   - Navigate to the IFTTT [web page](http://www.ifttt.com].
+  - Add the webhooks service if you have not already done so.
+  - Copy your personal identifying webhook hash to the clipboard.  This will be a multicharacter personal identifier.  
   - Create webhooks for the following actions.
   	- Pause
 	- Resume
@@ -75,7 +77,10 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
  #### SonosCE macro
   - Log on to codec web interface with Admin Credentials
   - Navigate to 'Integration - Macro Editor'
-  -
+  - Select the "SonosCE" macro
+  - Change the variable authForIFTTT to the hash that you obtained in the IFTTT webhooks section.  NOTE: If this ever changes, you will need to re-visit the macro and update it there accordingly.
+  
+	
 
   Scripting using API:
     - xCommand Provisioning Service Fetch Mode:Add URL: 'https://<YourPath>/nameofroomdeviceprovisioningfile.zip'
