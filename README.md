@@ -40,7 +40,7 @@ Documentation for the IFFTT webhook service can be found at this [IFFF service p
 Dcoumentation for Sonos hardware and the Sonos service can be found at the main [Sonos main page](http://www.cisco.com).
 
 ## How to provision
-### Setup IFTTT webhooks service
+### 1. Setup IFTTT webhooks service
   - Navigate to the IFTTT [web page](http://www.ifttt.com].
   - Create webhooks for the following actions.
   	- Pause
@@ -58,14 +58,14 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
 	- Top40
 	- ESPN
 
-### Download the files to the codec
+### 2. Download the files to the codec
   - Log on to codec web interface with Admin Credentials
   - Navigate to 'Maintenance' - 'Backup and Restore'
   - Select 'Restore backup'
   - Select the ZIP file in this repo (Package for provisioning)
   - Press 'Upload file'
  
- ### Personalize the macro and in-room console
+ ### 3. Personalize the macro and in-room console
  In these next steps, you will be modifying the macros with your personal identifying information
  #### In room-console
   - Log on to codec web interface with Admin Credentials
