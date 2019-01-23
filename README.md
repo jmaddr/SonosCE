@@ -42,9 +42,10 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
 ## How to provision
 ### 1. Setup IFTTT webhooks service
   - Navigate to the IFTTT [web page](http://www.ifttt.com].
+  - Add the Sonos service if you have not already done so.
   - Add the webhooks service if you have not already done so.
   - Copy your personal identifying webhook hash to the clipboard.  This will be a multicharacter personal identifier.  
-  - Create webhooks for the following actions.
+  - Create webhooks for the following actions, selecting the appropriate Sonos player (or group of players).
   	- Pause
 	- Resume
   - Create webhooks for the volume settings.  If you wish only a single volume not controlled by the codec, you can skip this step.
@@ -52,7 +53,7 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
 	- volumeSet25
 	- volumeSet50
 	- volumeSet75
-  - Create webhooks for the following "stations" you intend to play.  Create as many or as few as you like.  If you only have one station you intend to use, you can skip this step.
+  - Create webhooks for the following "stations" you intend to play.  Create as many or as few as you like.  If you only have one station you intend to use, you can skip this step.  These "stations" correspond to stations in your Sonos playlist.
 	- News
 	- Country
 	- ClassicRock
