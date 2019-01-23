@@ -1,27 +1,25 @@
 # SonosCE
 This macro and corresponding In-Room Control sample demonstrates how to create an in-room control application that controls the background music in the same room as the codec.  This specific Macro controls a previously created Sonos account via IFTT webhooks.
+Further, it provides and auto-mute and auto-resume of the background music upon an incoming or outgoing call notification.
 
 ---
 Snapshot of Touch 10 Home Screen Panel with Background Music button:
 ![Sample In-Room Control Screenshot](screenshot-SonosCE_MainScreen.png)
 
 
-Snapshot of Touch 10 Home Screen Panel after pressing the Join Webex button:
+Snapshot of Touch 10 Home Screen Panel after pressing the background Music button:
 ![Sample In-Room Control Screenshot](screenshot-SonosCE_sonosControl.png)
 ---
 
 
 This sample gadget contains the following files:
 
-     macro-samples/
-	Join Webex with Prompt for Pin before connect/
-		README.md (this file)
-		WebexDialler.js (the macro)
-		joinwebex_inroomcontrols.xml (in-room control definition file)
-		Screenshot_Touch10_idle.png (sample image)
-        Screenshot_Touch10_prompt_for_meetingid.png (sample image)
-        Screenshot_Touch10_prompt_for_hostpin.png (sample image)
-    ProvisionableApplicationPackage_joinwebex (Package for provisioning)
+	README.md (this file)
+	SonosCE.js (the javascript macro)
+	sonos.xml (the in-room control XML file)
+    	Screenshot-SonosCE_MainScreen.png (sample image)
+    	Screenshot_SonosCE_sonosControl.png (sample image)
+   	ProvisionableApplicationPackage_SonosCE.zip (Package for provisioning)
 
 
 ## Requirements
@@ -33,17 +31,51 @@ This sample gadget contains the following files:
 
 ## Additional Information
 ##### XAPI
-Documentation for the XAPI can be found in the [Command References overview](https://www.cisco.com/c/en/us/support/collaboration-endpoints/telepresence-quick-set-series/products-command-reference-list.html).
+Documentation for the Cisco XAPI can be found in the [Command References overview](https://www.cisco.com/c/en/us/support/collaboration-endpoints/telepresence-quick-set-series/products-command-reference-list.html).
+
+##### IFTTT
+Documentation for the IFFTT webhook service can be found at this [IFFF service page](https://ifttt.com/services/maker_webhooks).
+
+##### Sonos
+Dcoumentation for Sonos hardware and the Sonos service can be found at the main [Sonos main page](http://www.cisco.com).
 
 ## How to provision
-Per codec:
-  Web:
-    - Log on to codec web interface with Admin Credentials
-    - Navigate to 'Maintenance' - 'Backup and Restore'
-    - Select 'Restore backup'
-    - Select the ZIP file in this repo (Package for provisioning)
-    - Press 'Upload file'
-    - Voilla, check your touch panel and you should now see goodness.
+### Setup IFTTT webhooks service
+  - Navigate to the IFTTT [web page](http://www.ifttt.com].
+  - Create webhooks for the following actions.
+  	- Pause
+	- Resume
+  - Create webhooks for the volume settings.  If you wish only a single volume not controlled by the codec, you can skip this step.
+	- volumeSet10
+	- volumeSet25
+	- volumeSet50
+	- volumeSet75
+  - Create webhooks for the following "stations" you intend to play.  Create as many or as few as you like.  If you only have one station you intend to use, you can skip this step.
+	- News
+	- Country
+	- ClassicRock
+	- AlternativeRock
+	- Top40
+	- ESPN
+
+### Download the files to the codec
+  - Log on to codec web interface with Admin Credentials
+  - Navigate to 'Maintenance' - 'Backup and Restore'
+  - Select 'Restore backup'
+  - Select the ZIP file in this repo (Package for provisioning)
+  - Press 'Upload file'
+ 
+ ### Personalize the macro and in-room console
+ In these next steps, you will be modifying the macros with your personal identifying information
+ #### In room-console
+  - Log on to codec web interface with Admin Credentials
+  - Navigate to 'Integration - In-Room Control'
+  -
+  -
+ #### SonosCE macro
+  - Log on to codec web interface with Admin Credentials
+  - Navigate to 'Integration - Macro Editor'
+  -
 
   Scripting using API:
     - xCommand Provisioning Service Fetch Mode:Add URL: 'https://<YourPath>/nameofroomdeviceprovisioningfile.zip'
