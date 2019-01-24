@@ -81,7 +81,9 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
   - Navigate to 'Integration - Macro Editor'
   - Select the "SonosCE" macro
   - Change the variable authForIFTTT to the hash that you obtained in the IFTTT webhooks section.  In the macro in this reqpository, it is represented as {change_me}.  The entire {change_me} should be changed and and the result should be in quotes like this:
+  
   const authForIFTTT = "XXXXXXXXXXXXXXXXXX";
+  
   NOTE: If this ever changes, you will need to re-visit the macro and update it there accordingly.
   
   Test out your macro's and Sonos integration!
