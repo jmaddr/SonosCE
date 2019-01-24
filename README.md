@@ -17,9 +17,10 @@ This sample gadget contains the following files:
 	README.md (this file)
 	SonosCE.js (the javascript macro)
 	sonos.xml (the in-room control XML file)
-    	Screenshot-SonosCE_MainScreen.png (sample image)
-    	Screenshot_SonosCE_sonosControl.png (sample image)
-   	ProvisionableApplicationPackage_SonosCE.zip (Package for provisioning)
+	screenshot-SonosCE_MainScreen.png (sample image)
+	screenshot_SonosCE_sonosControl.png (sample image)
+	image_webhook-sample-personal-information.png (instructional image)
+	ProvisionableApplicationPackage_SonosCE.zip (Package for provisioning)
 
 
 ## Requirements
@@ -79,7 +80,9 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
   - Log on to codec web interface with Admin Credentials
   - Navigate to 'Integration - Macro Editor'
   - Select the "SonosCE" macro
-  - Change the variable authForIFTTT to the hash that you obtained in the IFTTT webhooks section.  NOTE: If this ever changes, you will need to re-visit the macro and update it there accordingly.
+  - Change the variable authForIFTTT to the hash that you obtained in the IFTTT webhooks section.  In the macro in this reqpository, it is represented as {change_me}.  The entire {change_me} should be changed and and the result should be in quotes like this:
+  const authForIFTTT = "XXXXXXXXXXXXXXXXXX";
+  NOTE: If this ever changes, you will need to re-visit the macro and update it there accordingly.
   
   Test out your macro's and Sonos integration!
 
