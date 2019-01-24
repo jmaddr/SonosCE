@@ -44,16 +44,16 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
   - Navigate to the IFTTT [web page](http://www.ifttt.com].
   - Add the Sonos service if you have not already done so.
   - Add the webhooks service if you have not already done so.
-  - Copy your personal webhook identifier to the clipboard.  This will be a multicharacter personal identifier.  you can find this identifier by navigating on the IFTTT website to "My Applets - Services - Webhooks - Settings" or directly by clicking [this link](https://ifttt.com/maker_webhooks).  The identifer is shown in the following image under the grey box. ![Image](image_webhook-sample-personal-information.png) 
+  - Copy your personal webhook identifier to the clipboard or notepad.  This will be a multicharacter personal identifier.  You can find this identifier by navigating on the IFTTT website to "My Applets - Services - Webhooks - Settings" or directly by clicking [this link](https://ifttt.com/maker_webhooks).  The identifer is shown in the following image under the grey box. ![Image](image_webhook-sample-personal-information.png) 
   - Create webhooks for the following actions, selecting the appropriate Sonos player (or group of players).
   	- Pause
 	- Resume
-  - Create webhooks for the volume settings.  If you wish only a single volume not controlled by the codec, you can skip this step.
-	- volumeSet10
-	- volumeSet25
-	- volumeSet50
-	- volumeSet75
-  - Create webhooks for the following "stations" you intend to play.  Create as many or as few as you like.  If you only have one station you intend to use, you can skip this step.  These "stations" correspond to stations in your Sonos playlist.
+  - Create webhooks for the volume settings.  If you wish only a single volume not controlled by the codec, you can skip this step.   Choose the "Set Volume" Sonos action and set the volume to the number in the event name.
+	- volumeSet10 (10% volume)
+	- volumeSet25 (25% volume)
+	- volumeSet50 (50% volume)
+	- volumeSet75 (75% volume)
+  - Create webhooks for the following "stations" you intend to play.  Create as many or as few as you like.  If you only have one station you intend to use, you can skip this step.  These "stations" correspond to stations in your Sonos playlist and will be created later.  This sample uses the following "station" names.
 	- News
 	- Country
 	- ClassicRock
@@ -73,18 +73,15 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
  #### In room-console
   - Log on to codec web interface with Admin Credentials
   - Navigate to 'Integration - In-Room Control'
-  -
-  -
+  - Select the "Background Music" in-room control if it's not already
+  - The panel will appear in the center section.  Delete any widgets not needed and rename any widgets such as the station names as desired.
  #### SonosCE macro
   - Log on to codec web interface with Admin Credentials
   - Navigate to 'Integration - Macro Editor'
   - Select the "SonosCE" macro
   - Change the variable authForIFTTT to the hash that you obtained in the IFTTT webhooks section.  NOTE: If this ever changes, you will need to re-visit the macro and update it there accordingly.
   
-	
-
-  Scripting using API:
-    - xCommand Provisioning Service Fetch Mode:Add URL: 'https://<YourPath>/nameofroomdeviceprovisioningfile.zip'
+  Test out your macro's and Sonos integration!
 
 ## Disclaimer
 This example is only a sample and is **NOT guaranteed to be bug free and production quality**.
