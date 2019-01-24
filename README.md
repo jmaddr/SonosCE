@@ -16,7 +16,7 @@ This sample gadget contains the following files:
 
 	README.md (this file)
 	SonosCE.js (the javascript macro)
-	sonos.xml (the in-room control XML file)
+	SonosCE-roomcontrolconfig.xml (the in-room control XML file)
 	screenshot-SonosCE_MainScreen.png (sample image)
 	screenshot_SonosCE_sonosControl.png (sample image)
 	image_webhook-sample-personal-information.png (instructional image)
