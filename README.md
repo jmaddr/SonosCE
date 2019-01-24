@@ -1,5 +1,5 @@
 # SonosCE
-This macro and corresponding In-Room Control sample demonstrates how to create an in-room control application that controls the background music in the same room as the codec.  This specific Macro controls a previously created Sonos account via IFTT webhooks.
+This macro and corresponding In-Room Control samples demonstrate how to create an in-room control application that controls the background music in the same room as the codec.  This specific Macro controls a previously created Sonos account via IFTT webhooks.
 Further, it provides and auto-mute and auto-resume of the background music upon an incoming or outgoing call notification.
 
 ---
