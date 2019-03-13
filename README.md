@@ -68,7 +68,17 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
   - Select 'Restore backup'
   - Select the ZIP file in this repo (Package for provisioning)
   - Press 'Upload file'
- 
+  
+### 3. Setup the codec
+  - Set the codec to AllowHTTP (default)
+  - Set the codec to AllowInsecureHTTPS
+  - Set the codec to HTTPClient mode on
+  
+  You can set these configurations in either the web or CLI.  Here are the commands for the CLI:
+    xConfiguration HttpClient Mode:On
+    xConfiguration HttpClient AllowInsecureHTTPS: True
+    xConfiguration HttpClient AllowHTTP: True
+
  ### 3. Personalize the macro and in-room console
  In these next steps, you will be modifying the macros with your personal identifying information
  #### In room-console
