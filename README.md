@@ -79,7 +79,7 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
     xConfiguration HttpClient AllowInsecureHTTPS: True
     xConfiguration HttpClient AllowHTTP: True
 
- ### 3. Personalize the macro and in-room console
+ ### 4. Personalize the macro and in-room console
  In these next steps, you will be modifying the macros with your personal identifying information
  #### In room-console
   - Log on to codec web interface with Admin Credentials
