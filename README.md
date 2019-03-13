@@ -75,9 +75,13 @@ Dcoumentation for Sonos hardware and the Sonos service can be found at the main 
   - Set the codec to HTTPClient mode on
   
   You can set these configurations in either the web or CLI.  Here are the commands for the CLI:
+  
     xConfiguration HttpClient Mode:On
+    
     xConfiguration HttpClient AllowInsecureHTTPS: True
+    
     xConfiguration HttpClient AllowHTTP: True
+    
 
  ### 4. Personalize the macro and in-room console
  In these next steps, you will be modifying the macros with your personal identifying information
